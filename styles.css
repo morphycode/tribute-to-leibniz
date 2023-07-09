@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto+Mono&display=swap');
+
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
   }
+}
+
+html {
+  font-size: 15px;
+  background-color: #fcfcfc;
 }
 
 /*cabecera #212,*/
@@ -26,7 +32,7 @@ a[href="#main"] {
 }
 
 a[href="#main"] > h2 {
-  font-size: 3em;
+  font-size: 2.5rem;
   color: beige;
   max-width:100%;
 }
@@ -36,7 +42,7 @@ a[href="#main"] > h2 {
   display: inline;
 }
 
-ul {
+.anchors {
   display: inline;
   list-style-type: none;
   list-style: none;
@@ -67,7 +73,7 @@ label[for="button"] {
 
 @media (max-width: 900px) {
   #logo {
-    width: 60px;
+    width: 50px;
     display: inline;
   }
 
@@ -76,7 +82,7 @@ label[for="button"] {
   }
 
   a[href="#main"] > h2 {
-    font-size: 1.7em;
+    font-size: 1.7rem;
     color: beige;
     max-width: 100%;
   }
@@ -87,7 +93,7 @@ label[for="button"] {
     display: block;
   }
 
-  ul {
+  .anchors {
     opacity: 0;
     top: -160px;
     position: relative;
@@ -98,7 +104,7 @@ label[for="button"] {
     opacity: 1;
     width: 25px;
     height: 25px;
-    margin: 120px 10px 10px auto;
+    margin: 120px 10px 0 auto;
   }
 
   nav {
@@ -111,23 +117,45 @@ label[for="button"] {
     z-index: 1;
   }
 
-  #button:checked ~ label + ul {
+  #button:checked ~ label + .anchors {
     opacity: 1;
-    top: 2px;
+    top: 10px;
     position: relative;
   }
-}/*    transition: opacity 0.3s ease;*/
 
+  h1 {
+    font-size: 3rem !important;
+  }
+}
 /* FIN encabezado */
 
 /* INICIO Content */
+body {
+  font-family: Marck Script, cursive;
+}
+
 main {
-  padding-top: 50px;
+  padding-top: 55px;
 }
 
 h1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 4rem;
+}
+
+h1, h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#tribute-info {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+#img-div {
+  background-color: #212;
+  color: #fbfbfb;
 }
 
 #image {
@@ -136,4 +164,10 @@ h1 {
   max-width:100%;
   margin: auto;
   display: block;
+}
+
+/*Footer*/
+footer {
+  height: 100px;
+  background: linear-gradient(90deg, #00A, #212, #111010);
 }
