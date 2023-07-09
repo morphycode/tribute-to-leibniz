@@ -14,7 +14,7 @@ html {
   background-color: #fcfcfc;
 }
 
-/*cabecera #212,*/
+/*header nav #212,*/
 header {
   width: 100%;
   height: 50px;
@@ -71,9 +71,9 @@ label[for="button"] {
   display: inline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   #logo {
-    width: 50px;
+    width: 60px;
     display: inline;
   }
 
@@ -95,7 +95,7 @@ label[for="button"] {
 
   .anchors {
     opacity: 0;
-    top: -160px;
+    top: -180px;
     position: relative;
   }
 
@@ -104,7 +104,7 @@ label[for="button"] {
     opacity: 1;
     width: 25px;
     height: 25px;
-    margin: 120px 10px 0 auto;
+    margin: 148px 10px 0 auto;
   }
 
   nav {
@@ -117,19 +117,17 @@ label[for="button"] {
     z-index: 1;
   }
 
+  /*The best thing you can do with checkbox?...*/
+
   #button:checked ~ label + .anchors {
     opacity: 1;
-    top: 10px;
+    top: 13px;
     position: relative;
   }
-
-  h1 {
-    font-size: 3rem !important;
-  }
 }
-/* FIN encabezado */
+/* END Header Nav */
 
-/* INICIO Content */
+/* Content Style*/
 body {
   font-family: Marck Script, cursive;
 }
@@ -153,6 +151,12 @@ h1, h2 {
   font-size: 2rem;
 }
 
+#img-caption {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
 #img-div {
   background-color: #212;
   color: #fbfbfb;
@@ -166,8 +170,40 @@ h1, h2 {
   display: block;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #tribute-info, #img-caption {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #logo {
+    width: 50px;
+    display: inline;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #tribute-info, #img-caption {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
 /*Footer*/
 footer {
-  height: 100px;
   background: linear-gradient(90deg, #00A, #212, #111010);
 }
