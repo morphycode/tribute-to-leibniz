@@ -102,11 +102,15 @@ h1 {
   font-family: Marck Script, cursive;
 }
 
+figcaption {
+  font-size: 1.5rem;
+  font-family: Marck Script, cursive;
+}
+
 #img-caption {
   text-align: center;
   font-size: 3.5rem;
   padding: 10px;
-  font-family: Marck Script, cursive;
 }
 
 #img-div {
@@ -137,7 +141,6 @@ dd:nth-last-child(1) {
 
 .img-section {
   width: 20vw;
-  height: 15vw;
 }
 
 section {
@@ -214,8 +217,7 @@ section figure {
   }
 
   .img-section {
-    width: 40vw;
-    height: 30vw;
+    height: 40vw;
   }
   
   section figure {
@@ -232,7 +234,7 @@ section figure {
     font-size: 1.5rem;
   }
 
-  body, #tribute-info, #img-caption {
+  body, figcaption, #tribute-info, #img-caption {
     font-size: 1rem;
   }
 
@@ -256,7 +258,6 @@ section figure {
 
   .img-section {
     width: 100%;
-    height: 40vw;
   }
 
   section {
@@ -267,5 +268,4 @@ section figure {
 /*Footer*/
 footer {
   background: linear-gradient(90deg, #00A, #212, #111010);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
