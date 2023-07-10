@@ -171,7 +171,6 @@ h1, h2 {
 }
 
 section > p {
-  margin: 15px;
   text-align: justify;
   font-size: 1.2em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -194,23 +193,24 @@ dd:nth-last-child(1) {
 }
 
 .img-section {
-  width: 18vw;
+  width: 20vw;
   height: 18vw;
 }
 
 section {
   display: flex;
   max-width: 2000px;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
-section > figure {
-  width: 20%;
+section figure {
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: justify;
+  margin-left: 15px;
 }
 
 @media (max-width: 900px) {
@@ -231,7 +231,7 @@ section > figure {
     height: 30vw;
   }
   
-  section > figure {
+  section figure {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -258,18 +258,22 @@ section > figure {
     display: inline;
   }
 
-  section > figure {
+  section figure {
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: auto;
+    margin: 15px auto;
   }
 
   .img-section {
-    width: 70vw;
+    width: 100%;
     height: 60vw;
+  }
+
+  section {
+    display: block;
   }
 }
 
