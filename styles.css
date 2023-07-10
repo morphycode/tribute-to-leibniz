@@ -11,7 +11,13 @@
 
 html {
   font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fcfcfc;
+  text-align: justify;
+}
+
+body {
+  font-size: 1.2rem;
 }
 
 /*header nav #212,*/
@@ -71,8 +77,86 @@ a[href="#main"] > h2 {
 label[for="button"] {
   display: inline;
 }
+/* END Header Nav */
 
-@media (max-width: 950px) {
+/* Content Style*/
+main {
+  padding-top: 55px;
+}
+
+main > h2 {
+  padding-top: 50px;
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#tribute-info {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: Marck Script, cursive;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 10px;
+  font-family: Marck Script, cursive;
+}
+
+#img-div {
+  background-color: #212;
+  color: #fbfbfb;
+  margin-bottom: 15px;
+}
+
+#image {
+  height: auto;
+  width: 100%;
+  max-width:100%;
+  margin: auto;
+  display: block;
+}
+
+dt, dd {
+  margin: 10px;
+}
+
+dd {
+  margin-inline-start: 30px;
+}
+
+dd:nth-last-child(1) {
+  margin-bottom: 25px;
+}
+
+.img-section {
+  width: 20vw;
+  height: 15vw;
+}
+
+section {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 15px;
+}
+
+section figure {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 15px;
+}
+
+@media (max-width: 900px) {
   header {
     justify-content: space-between;
   }
@@ -120,97 +204,7 @@ label[for="button"] {
     top: 12px;
     position: relative;
   }
-}
-/* END Header Nav */
 
-/* Content Style*/
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: justify;
-  font-size: 1.2em;
-}
-
-main {
-  padding-top: 55px;
-}
-
-main > h2 {
-  padding-top: 50px;
-  margin-left: 10px;
-  font-size: 2rem;
-}
-
-h1 {
-  text-align: center;
-  font-size: 4rem;
-}
-
-h1, h2 {
-  font-family: 'Roboto Mono', monospace;
-}
-
-#tribute-info {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 2rem;
-  font-family: Marck Script, cursive;
-}
-
-#img-caption {
-  text-align: center;
-  font-size: 3.5rem;
-  padding: 10px;
-  font-family: Marck Script, cursive;
-}
-
-#img-div {
-  background-color: #212;
-  color: #fbfbfb;
-  margin-bottom: 15px;
-}
-
-#image {
-  height: auto;
-  width: 100%;
-  max-width:100%;
-  margin: auto;
-  display: block;
-}
-
-dt, dd {
-  margin: 10px;
-}
-
-dd {
-  margin-inline-start: 30px;
-}
-
-dd:nth-last-child(1) {
-  margin-bottom: 25px;
-}
-
-.img-section {
-  width: 20vw;
-  height: 18vw;
-}
-
-section {
-  display: flex;
-  max-width: 2000px;
-  margin: 0 15px;
-}
-
-section figure {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: justify;
-  margin-left: 15px;
-}
-
-@media (max-width: 900px) {
   h1 {
     font-size: 3rem;
   }
@@ -262,7 +256,7 @@ section figure {
 
   .img-section {
     width: 100%;
-    height: 60vw;
+    height: 40vw;
   }
 
   section {
