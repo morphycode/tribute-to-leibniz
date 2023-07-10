@@ -51,6 +51,7 @@ a[href="#main"] > h2 {
 
 .nav-list {
   display: inline;
+  font-family: Marck Script, cursive;
 }
 
 .nav-list > a {
@@ -124,7 +125,9 @@ label[for="button"] {
 
 /* Content Style*/
 body {
-  font-family: Marck Script, cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  font-size: 1.2em;
 }
 
 main {
@@ -132,7 +135,9 @@ main {
 }
 
 main > h2 {
+  padding-top: 50px;
   margin-left: 10px;
+  font-size: 2rem;
 }
 
 h1 {
@@ -148,12 +153,14 @@ h1, h2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 2rem;
+  font-family: Marck Script, cursive;
 }
 
 #img-caption {
   text-align: center;
   font-size: 3.5rem;
   padding: 10px;
+  font-family: Marck Script, cursive;
 }
 
 #img-div {
@@ -170,22 +177,12 @@ h1, h2 {
   display: block;
 }
 
-section > p {
-  text-align: justify;
-  font-size: 1.2em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-dt {
-  text-decoration: solid;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+dt, dd {
   margin: 10px;
 }
 
 dd {
-  margin: 10px;
   margin-inline-start: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 dd:nth-last-child(1) {
@@ -222,10 +219,6 @@ section figure {
     font-size: 1.5rem;
   }
 
-  h2 {
-    font-size: 2rem;
-  }
-
   .img-section {
     width: 40vw;
     height: 30vw;
@@ -245,12 +238,12 @@ section figure {
     font-size: 1.5rem;
   }
 
-  #tribute-info, #img-caption {
+  body, #tribute-info, #img-caption {
     font-size: 1rem;
   }
 
-  h2 {
-    font-size: 1.25rem;
+  main h2 {
+    font-size: 1.35rem;
   }
 
   #logo {
@@ -264,7 +257,7 @@ section figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 15px auto;
+    margin: 10px auto 0 auto;
   }
 
   .img-section {
