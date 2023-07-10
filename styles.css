@@ -38,7 +38,7 @@ a[href="#main"] > h2 {
 }
 
 #logo {
-  width: 80px;
+  width: 50px;
   display: inline;
 }
 
@@ -72,11 +72,6 @@ label[for="button"] {
 }
 
 @media (max-width: 950px) {
-  #logo {
-    width: 60px;
-    display: inline;
-  }
-
   header {
     justify-content: space-between;
   }
@@ -95,7 +90,7 @@ label[for="button"] {
 
   .anchors {
     opacity: 0;
-    top: -180px;
+    top: -160px;
     position: relative;
   }
 
@@ -104,7 +99,7 @@ label[for="button"] {
     opacity: 1;
     width: 25px;
     height: 25px;
-    margin: 148px 10px 0 auto;
+    margin: 120px 10px 0 auto;
   }
 
   nav {
@@ -121,7 +116,7 @@ label[for="button"] {
 
   #button:checked ~ label + .anchors {
     opacity: 1;
-    top: 13px;
+    top: 12px;
     position: relative;
   }
 }
@@ -134,6 +129,10 @@ body {
 
 main {
   padding-top: 55px;
+}
+
+main > h2 {
+  margin-left: 10px;
 }
 
 h1 {
@@ -153,13 +152,14 @@ h1, h2 {
 
 #img-caption {
   text-align: center;
-  font-size: 2rem;
-  font-family: 'Roboto Mono', monospace;
+  font-size: 3.5rem;
+  padding: 10px;
 }
 
 #img-div {
   background-color: #212;
   color: #fbfbfb;
+  margin-bottom: 15px;
 }
 
 #image {
@@ -168,6 +168,49 @@ h1, h2 {
   max-width:100%;
   margin: auto;
   display: block;
+}
+
+section > p {
+  margin: 15px;
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dt {
+  text-decoration: solid;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+
+dd {
+  margin: 10px;
+  margin-inline-start: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dd:nth-last-child(1) {
+  margin-bottom: 25px;
+}
+
+.img-section {
+  width: 18vw;
+  height: 18vw;
+}
+
+section {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 10px;
+}
+
+section > figure {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
 }
 
 @media (max-width: 900px) {
@@ -182,14 +225,22 @@ h1, h2 {
   h2 {
     font-size: 2rem;
   }
+
+  .img-section {
+    width: 40vw;
+    height: 30vw;
+  }
+  
+  section > figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 550px) {
-  #logo {
-    width: 50px;
-    display: inline;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
@@ -201,9 +252,29 @@ h1, h2 {
   h2 {
     font-size: 1.25rem;
   }
+
+  #logo {
+    width: 40px;
+    display: inline;
+  }
+
+  section > figure {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .img-section {
+    width: 70vw;
+    height: 60vw;
+  }
 }
 
 /*Footer*/
 footer {
   background: linear-gradient(90deg, #00A, #212, #111010);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
