@@ -68,6 +68,8 @@ a[href="#main"] > h2 {
   display: inline;
 }
 
+/* I know that is not recomendable to use checkbox but why not?*/
+
 #button {
   display: inline;
   opacity: 0;
@@ -77,9 +79,11 @@ a[href="#main"] > h2 {
 label[for="button"] {
   display: inline;
 }
+
 /* END Header Nav */
 
-/* Content Style*/
+/* MAIN Content Style*/
+
 main {
   padding-top: 55px;
 }
@@ -93,6 +97,7 @@ main > h2 {
 h1 {
   text-align: center;
   font-size: 4rem;
+  font-family: Marck Script, cursive;
 }
 
 #tribute-info {
@@ -127,6 +132,12 @@ figcaption {
   display: block;
 }
 
+.img-main-3 {
+  width: 30vw;
+}
+
+/* SOURCES: */
+
 dt, dd {
   margin: 10px;
 }
@@ -137,10 +148,6 @@ dd {
 
 dd:nth-last-child(1) {
   margin-bottom: 25px;
-}
-
-.img-section {
-  width: 20vw;
 }
 
 section {
@@ -157,6 +164,52 @@ section figure {
   flex-direction: column;
   text-align: justify;
   margin-left: 15px;
+}
+
+/*Footer*/
+
+footer {
+  background: linear-gradient(90deg, #111010, #212, #00A);
+  font-family: Marck Script, cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+}
+
+.socialinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.socialinks p {
+  width: 100%;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.socialinks > a {
+  margin: 10px;
+  color: #fff;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.socialinks > a:hover {
+  text-decoration: underline;
+}
+
+.socialinks img {
+  padding: 5px;
+  width: 4rem;
+}
+
+.last-p {
+  padding: 10px;
+  font-size: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -216,10 +269,6 @@ section figure {
     font-size: 1.5rem;
   }
 
-  .img-section {
-    height: 40vw;
-  }
-  
   section figure {
     width: 40%;
     display: flex;
@@ -227,19 +276,60 @@ section figure {
     align-items: center;
     flex-direction: column;
   }
+
+  .last-p {
+    font-size: 0.9rem;
+  }
 }
 
-@media (max-width: 550px) {
-  h1 {
-    font-size: 1.5rem;
-  }
 
+@media (max-width: 620px) {
   body, figcaption, #tribute-info, #img-caption {
     font-size: 1rem;
   }
 
   main h2 {
     font-size: 1.35rem;
+  }
+
+  section figure {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto 0 auto;
+  }
+
+  .img-main, .img-main-3 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  figcaption {
+    font-size: 1.5rem;
+  }
+
+  section {
+    display: block;
+  }
+
+  .last-p {
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    justify-content: space-around;
+  }
+
+  .last-p span {
+    padding: 2px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.5rem;
   }
 
   #logo {
@@ -256,16 +346,11 @@ section figure {
     margin: 10px auto 0 auto;
   }
 
-  .img-section {
-    width: 100%;
-  }
-
   section {
     display: block;
   }
-}
 
-/*Footer*/
-footer {
-  background: linear-gradient(90deg, #00A, #212, #111010);
+  figcaption {
+    font-size: 1rem;
+  }
 }
